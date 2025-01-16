@@ -2,7 +2,9 @@ import 'package:asi_shop/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class Fallback extends StatelessWidget {
-  const Fallback({super.key});
+  const Fallback({this.isOrders = false, super.key});
+
+  final bool isOrders;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class Fallback extends StatelessWidget {
         children: [
           Image.asset('assets/tony.png'),
           Text(
-            'Nenhum AsiProduto disponível...',
+            'Nenhum ${isOrders ? 'AsiPedido' : "AsiProduto"} disponível...',
             textAlign: TextAlign.center,
             style: kTextStyles.bodyText.copyWith(
               fontSize: 32,

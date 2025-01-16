@@ -6,6 +6,6 @@ class User {
   User(this.name) : asipoints = Random().nextInt(200) + 5;
 
   final String name;
-  final int asipoints;
+  int asipoints;
   final List<Order> orders = [];
 }

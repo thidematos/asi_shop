@@ -6,6 +6,10 @@ enum CartProperties { product, quantity, total }
 class CartNotifier extends StateNotifier<List<Map<CartProperties, Object>>> {
   CartNotifier() : super([]);
 
+  void clearCart() {
+    state = [];
+  }
+
   void addProductToCart(Product product) {
     final List<Product> curProducts = state
         .map((cartItem) => cartItem[CartProperties.product] as Product)
