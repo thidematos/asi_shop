@@ -9,7 +9,7 @@ class TextStyles {
 
   final TextStyle bodyText = GoogleFonts.dmSans(
     fontSize: 16,
-    color: const Color.fromARGB(255, 22, 22, 22),
+    color: const Color.fromARGB(210, 66, 66, 66),
   );
 }
 

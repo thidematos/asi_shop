@@ -63,6 +63,17 @@ flutter:
   assets:
     - assets/logo.png
     - assets/logo-branca.png
+    - assets/mousepad.png
+    - assets/sacochila.png
+    - assets/pulseira.png
+    - assets/garrafa.png
+    - assets/chaveiro.png
+    - assets/caneta.png
+    - assets/caneca.png
+    - assets/bottom.png
+    - assets/agenda.png
+    - assets/adesivo.png
+    - assets/tony.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
