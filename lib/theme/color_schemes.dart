@@ -10,6 +10,7 @@ class ColorSchemes {
   final Color cta = const Color.fromARGB(255, 26, 55, 71);
   final Color ctaContrast = const Color.fromARGB(255, 99, 208, 168);
   final Color border = const Color.fromARGB(40, 0, 0, 0);
+  final Color errorRed = const Color.fromARGB(255, 193, 59, 49);
 }
 
 const ColorSchemes kColorScheme = ColorSchemes();

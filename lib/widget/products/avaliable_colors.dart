@@ -8,9 +8,10 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AvaliableColors extends ConsumerWidget {
-  const AvaliableColors(this.product, {super.key});
+  AvaliableColors(this.product, {this.triggerState, super.key});
 
   final Product product;
+  void Function()? triggerState;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -31,6 +32,9 @@ class AvaliableColors extends ConsumerWidget {
                   ref
                       .read(avaliableProductsProvider.notifier)
                       .selectColor(product, color);
+                  if (triggerState != null) {
+                    triggerState!();
+                  }
                 },
                 child: Container(
                   width: 20,

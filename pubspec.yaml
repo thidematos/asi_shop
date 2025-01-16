@@ -74,6 +74,7 @@ flutter:
     - assets/agenda.png
     - assets/adesivo.png
     - assets/tony.png
+    - assets/sad-tony.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
